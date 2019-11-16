@@ -1,44 +1,46 @@
 {
-    "bus": {
-        "name": "Bus",
-        "speed": 17.7,
-        "CO2pkm": 68,
-        "cost": 0.05
-    },
-    "bicycle": {
-        "name": "Bicycle",
-        "speed": 20,
-        "CO2pkm": 0,
-        "cost": 0
-    },
-    "car": {
-        "name": "Car",
-        "speed": 50,
-        "CO2pkm": 55,
-        "cost": 0.34
-    },
-    "escooter": {
-        "name": "E-Scooter",
-        "speed": 18,
-        "CO2pkm": 0,
-        "cost": 0.002
-    },
-    "train": {
-        "name": "Train",
-        "CO2pkm": 14,
-        "speed": 100,
-        "cost": 0.136
-    },
-    "walking": {
-        "name": "Walk",
-        "speed": 3.6,
-        "CO2pkm": 0,
-        "cost": 0
-    },
-    "airplane": {
-        "name": "Airplane",
-        "speed": 720,
-        "CO2pkm": 285,
-        "cost": 0.43
+    "data": {
+        "bus": {
+            "name": "Bus",
+            "speed": 17.7,
+            "CO2pkm": 68,
+            "cost": 0.05
+        },
+        "bicycle": {
+            "name": "Bicycle",
+            "speed": 20,
+            "CO2pkm": 0,
+            "cost": 0
+        },
+        "car": {
+            "name": "Car",
+            "speed": 50,
+            "CO2pkm": 55,
+            "cost": 0.34
+        },
+        "escooter": {
+            "name": "E-Scooter",
+            "speed": 18,
+            "CO2pkm": 0,
+            "cost": 0.002
+        },
+        "train": {
+            "name": "Train",
+            "CO2pkm": 14,
+            "speed": 100,
+            "cost": 0.136
+        },
+        "walking": {
+            "name": "Walk",
+            "speed": 3.6,
+            "CO2pkm": 0,
+            "cost": 0
+        },
+        "airplane": {
+            "name": "Airplane",
+            "speed": 720,
+            "CO2pkm": 285,
+            "cost": 0.43
+        }
     }
 }
