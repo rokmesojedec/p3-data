@@ -13,7 +13,7 @@
             "speed": 17.7,
             "CO2pkm": 68,
             "cost": 0.05,
-            "bus" : "Bu",
+            "prefix" : "Bu",
             "icon" : "fa-bus"
         },
         "bicycle": {
