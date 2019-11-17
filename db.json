@@ -1,46 +1,60 @@
 {
     "data": {
+        "airplane": {
+            "name": "Airplane",
+            "speed": 720,
+            "CO2pkm": 285,
+            "cost": 0.43,
+            "prefix" : "A",
+            "icon" : "fa-plane"
+        },
         "bus": {
             "name": "Bus",
             "speed": 17.7,
             "CO2pkm": 68,
-            "cost": 0.05
+            "cost": 0.05,
+            "bus" : "Bu",
+            "icon" : "fa-bus"
         },
         "bicycle": {
             "name": "Bicycle",
             "speed": 20,
             "CO2pkm": 0,
-            "cost": 0
+            "cost": 0,
+            "prefix" : "Bi",
+            "icon" : "fa-bicycle"
         },
         "car": {
             "name": "Car",
             "speed": 50,
             "CO2pkm": 55,
-            "cost": 0.34
+            "cost": 0.34,
+            "prefix" : "C",
+            "icon" : "fa-car"
         },
         "escooter": {
             "name": "E-Scooter",
             "speed": 18,
             "CO2pkm": 0,
-            "cost": 0.002
+            "cost": 0.002,
+            "prefix" : "Es",
+            "icon" : "fa-motorcycle"
         },
         "train": {
             "name": "Train",
             "CO2pkm": 14,
             "speed": 100,
-            "cost": 0.136
+            "cost": 0.136,
+            "prefix" : "T",
+            "icon" : "fa-train"
         },
         "walking": {
-            "name": "Walk",
+            "name": "Walking",
             "speed": 3.6,
             "CO2pkm": 0,
-            "cost": 0
-        },
-        "airplane": {
-            "name": "Airplane",
-            "speed": 720,
-            "CO2pkm": 285,
-            "cost": 0.43
+            "cost": 0,
+            "prefix" : "W",
+            "icon" : "fa-walking"
         }
     }
 }
