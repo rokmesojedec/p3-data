@@ -5,56 +5,212 @@
             "speed": 720,
             "CO2pkm": 285,
             "cost": 0.43,
-            "prefix" : "A",
-            "icon" : "fa-plane"
+            "prefix": "A",
+            "icon": "fa-plane",
+            "class": "airplane"
         },
         "bus": {
             "name": "Bus",
             "speed": 17.7,
             "CO2pkm": 68,
             "cost": 0.05,
-            "prefix" : "Bu",
-            "icon" : "fa-bus"
+            "prefix": "Bu",
+            "icon": "fa-bus",
+            "class": "bus"
         },
         "bicycle": {
             "name": "Bicycle",
             "speed": 20,
             "CO2pkm": 0,
             "cost": 0,
-            "prefix" : "Bi",
-            "icon" : "fa-bicycle"
+            "prefix": "Bi",
+            "icon": "fa-bicycle",
+            "class": "bicycle"
         },
         "car": {
             "name": "Car",
             "speed": 50,
             "CO2pkm": 55,
             "cost": 0.34,
-            "prefix" : "C",
-            "icon" : "fa-car"
+            "prefix": "C",
+            "icon": "fa-car",
+            "class": "car"
         },
         "escooter": {
             "name": "E-Scooter",
             "speed": 18,
             "CO2pkm": 0,
             "cost": 0.002,
-            "prefix" : "Es",
-            "icon" : "fa-motorcycle"
+            "prefix": "Es",
+            "icon": "fa-motorcycle",
+            "class": "escooter"
         },
         "train": {
             "name": "Train",
             "CO2pkm": 14,
             "speed": 100,
             "cost": 0.136,
-            "prefix" : "T",
-            "icon" : "fa-train"
+            "prefix": "T",
+            "icon": "fa-train",
+            "class": "train"
         },
         "walking": {
             "name": "Walking",
             "speed": 3.6,
             "CO2pkm": 0,
             "cost": 0,
-            "prefix" : "W",
-            "icon" : "fa-walking"
+            "prefix": "Wk",
+            "icon": "fa-walking",
+            "class": "walk"
+        },
+        "wait": {
+            "name": "Wait",
+            "speed": 0,
+            "CO2pkm": 0,
+            "cost": 0,
+            "prefix": "Wt",
+            "icon": "fa-hourglass",
+            "class": "wait"
         }
+    },
+    "demo": {
+        "levels": [
+            [
+                {
+                    "id": 1,
+                    "typeJSON": "{\"name\":\"Car\",\"speed\":50,\"CO2pkm\":55,\"cost\":0.34,\"prefix\":\"C\",\"icon\":\"fa-car\",\"class\":\"car\"}",
+                    "rootNode": true,
+                    "distance": "15"
+                },
+                {
+                    "id": 2,
+                    "typeJSON": "{\"name\":\"Bus\",\"speed\":17.7,\"CO2pkm\":68,\"cost\":0.05,\"prefix\":\"Bu\",\"icon\":\"fa-bus\",\"class\":\"bus\"}",
+                    "rootNode": true,
+                    "distance": "15"
+                }
+            ],
+            [
+                {
+                    "id": 3,
+                    "typeJSON": "{\"name\":\"Walking\",\"speed\":3.6,\"CO2pkm\":0,\"cost\":0,\"prefix\":\"Wk\",\"icon\":\"fa-walking\",\"class\":\"walk\"}",
+                    "rootNode": false,
+                    "distance": "1"
+                }
+            ],
+            [
+                {
+                    "id": 4,
+                    "typeJSON": "{\"name\":\"Train\",\"CO2pkm\":14,\"speed\":100,\"cost\":0.136,\"prefix\":\"T\",\"icon\":\"fa-train\",\"class\":\"train\"}",
+                    "rootNode": false,
+                    "distance": "15"
+                },
+                {
+                    "id": 5,
+                    "typeJSON": "{\"name\":\"E-Scooter\",\"speed\":18,\"CO2pkm\":0,\"cost\":0.002,\"prefix\":\"Es\",\"icon\":\"fa-motorcycle\",\"class\":\"escooter\"}",
+                    "rootNode": false,
+                    "distance": "15"
+                }
+            ],
+            [
+                {
+                    "id": 6,
+                    "typeJSON": "{\"name\":\"Walking\",\"speed\":3.6,\"CO2pkm\":0,\"cost\":0,\"prefix\":\"Wk\",\"icon\":\"fa-walking\",\"class\":\"walk\"}",
+                    "rootNode": false,
+                    "distance": "1"
+                }
+            ]
+        ],
+        "edges": [
+            {
+                "startNode": "C1",
+                "endNode": "Wk3",
+                "id": 1,
+                "startPosition": "bottom",
+                "endePosition": "auto",
+                "lineSettings": {
+                    "size": 2,
+                    "color": "#3f3f3f",
+                    "endPlugSize": 1,
+                    "path": "grid",
+                    "startSocket": "bottom",
+                    "endSocket": "auto"
+                }
+            },
+            {
+                "startNode": "Bu2",
+                "endNode": "Wk3",
+                "id": 2,
+                "startPosition": "bottom",
+                "endePosition": "auto",
+                "lineSettings": {
+                    "size": 2,
+                    "color": "#3f3f3f",
+                    "endPlugSize": 1,
+                    "path": "grid",
+                    "startSocket": "bottom",
+                    "endSocket": "auto"
+                }
+            },
+            {
+                "startNode": "Wk3",
+                "endNode": "T4",
+                "id": 3,
+                "startPosition": "bottom",
+                "endePosition": "auto",
+                "lineSettings": {
+                    "size": 2,
+                    "color": "#3f3f3f",
+                    "endPlugSize": 1,
+                    "path": "grid",
+                    "startSocket": "bottom",
+                    "endSocket": "auto"
+                }
+            },
+            {
+                "startNode": "Wk3",
+                "endNode": "Es5",
+                "id": 4,
+                "startPosition": "bottom",
+                "endePosition": "auto",
+                "lineSettings": {
+                    "size": 2,
+                    "color": "#3f3f3f",
+                    "endPlugSize": 1,
+                    "path": "grid",
+                    "startSocket": "bottom",
+                    "endSocket": "auto"
+                }
+            },
+            {
+                "startNode": "T4",
+                "endNode": "Wk6",
+                "id": 5,
+                "startPosition": "bottom",
+                "endePosition": "auto",
+                "lineSettings": {
+                    "size": 2,
+                    "color": "#3f3f3f",
+                    "endPlugSize": 1,
+                    "path": "grid",
+                    "startSocket": "bottom",
+                    "endSocket": "auto"
+                }
+            },
+            {
+                "startNode": "Es5",
+                "endNode": "Wk6",
+                "id": 6,
+                "startPosition": "bottom",
+                "endePosition": "auto",
+                "lineSettings": {
+                    "size": 2,
+                    "color": "#3f3f3f",
+                    "endPlugSize": 1,
+                    "path": "grid",
+                    "startSocket": "bottom",
+                    "endSocket": "auto"
+                }
+            }
+        ]
     }
 }
